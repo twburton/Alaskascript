@@ -535,11 +535,9 @@ a,b,c,d,e,f,g,h,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z=find_fields(str(resultarray))
 # w.field("bisonID")
 
 
-# i=0 # should be changed to — while (i < len(data["carparks"]))
-# while (i<243):
 
-# w.point(float(data2["carparks"][i]["lng"]),float(data2["carparks"][i]["lat"]))
-# w.record(data2["carparks"][i]["id"],data2["carparks"][i]["address"],data2["carparks"][i]["lat"],data2["carparks"][i]["lng"],data2["carparks"][i]["rate"],data2["carparks"][i]["rate_half_hour"],data2["carparks"][i]["carpark_type"],data2["carparks"][i]["carpark_type_str"],data2["carparks"][i]["max_height"],data2["carparks"][i]["capacity"],data2["carparks"][i]["payment_options"],data2["carparks"][i]["rate_details"])
+# w.point(float(data2["fields"][i]["lng"]),float(data2["fields"][i]["lat"]))
+# w.record(data2["fields"][i]["id"],data2["fields"][i]["address"],data2["fields"][i]["lat"],data2["fields"][i]["lng"],data2["fields"][i]["rate"],data2["fields"][i]["rate_half_hour"],data2["fields"][i]["carpark_type"],data2["fields"][i]["carpark_type_str"],data2["fields"][i]["max_height"],data2["fields"][i]["capacity"],data2["fields"][i]["payment_options"],data2["fields"][i]["rate_details"])
 # i+=1
 
 # prj = open("csvSHP.prj", "w")
