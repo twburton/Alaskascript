@@ -25,7 +25,7 @@ clipfeatures= arcpy.GetParameterAsText(0)
 gdb=arcpy.GetParameterAsText(1)
 #name of featureclass
 featureclassname =arcpy.GetParameterAsText(2)
-#name of clipped feature
+#path of clipped feature
 outclipfeature=arcpy.GetParameterAsText(3)
 #bison query string that has bounding box that encompasses park boundary ex: querystring="https://data.usgs.gov/solr/occurrences/select/?q={!bbox pt=66.62313748,-159.341958 sfield=geo d=1}&rows=1000000&wt=json"
 #https://data.usgs.gov/solr/occurrences/select/?q={!bbox pt=60.80971555,-162.97316711 sfield=geo d=3}&rows=100&wt=json
