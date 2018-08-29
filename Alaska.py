@@ -27,14 +27,14 @@ gdb=arcpy.GetParameterAsText(1)
 featureclassname =arcpy.GetParameterAsText(2)
 #path of clipped feature
 outclipfeature=arcpy.GetParameterAsText(3)
-#bison query string that has bounding box that encompasses park boundary ex: querystring="https://data.usgs.gov/solr/occurrences/select/?q={!bbox pt=66.62313748,-159.341958 sfield=geo d=1}&rows=1000000&wt=json"
-#https://data.usgs.gov/solr/occurrences/select/?q={!bbox pt=60.80971555,-162.97316711 sfield=geo d=3}&rows=100&wt=json
+#bison query string that has bounding box that encompasses park boundary ex: querystring="https://bison.usgs.gov/solr/occurrences/select/?q={!bbox pt=66.62313748,-159.341958 sfield=geo d=1}&rows=1000000&wt=json"
+#https://bison.usgs.gov/solr/occurrences/select/?q={!bbox pt=60.80971555,-162.97316711 sfield=geo d=3}&rows=100&wt=json
 querystring=arcpy.GetParameterAsText(4)
-#querystring='https://data.usgs.gov/solr/occurrences/select/?q={!bbox pt=60.80971555,-162.97316711 sfield=geo d=3}&rows=10000000&wt=json'
+#querystring='https://bison.usgs.gov/solr/occurrences/select/?q={!bbox pt=60.80971555,-162.97316711 sfield=geo d=3}&rows=10000000&wt=json'
 outproject=gdb+"\\reproject"
 
 
-#'https://data.usgs.gov/solr/occurrences/select/?q=decimalLatitude:[35.38%20TO%2035.87]%20AND%20decimalLongitude:[-84.058%20TO%20-82.96]&wt=json&facet=true&facet.limit=-1&facet.mincount=1&facet.pivot=kingdom,scientificName&&indent=true'
+#'https://bison.usgs.gov/solr/occurrences/select/?q=decimalLatitude:[35.38%20TO%2035.87]%20AND%20decimalLongitude:[-84.058%20TO%20-82.96]&wt=json&facet=true&facet.limit=-1&facet.mincount=1&facet.pivot=kingdom,scientificName&&indent=true'
 
 
 
